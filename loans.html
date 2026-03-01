@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loans – MicroGrow Financial Institute</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    details summary::-webkit-details-marker { display: none; }
+    .loan-card-hover { transition: all 0.2s ease; }
+    .loan-card-hover:hover { transform: translateY(-4px); box-shadow: 0 25px 30px -12px rgba(6, 148, 162, 0.15); }
+  </style>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-cyan-200 selection:text-cyan-900">
+ <header class="bg-black backdrop-blur border-b border-black sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img src="Images/Black White Modern Skyline Logo Design.png" 
+             alt="MicroGrow logo"  
+             class="w-10 h-10">
+        <span class="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent">
+          MicroGrow
+        </span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-9 text-cyan-100/90">
+        <a href="#" class="hover:text-cyan-300 transition font-medium">Home</a>
+        <a href="#" class="hover:text-cyan-300 transition font-medium">Loans</a>
+        <a href="#" class="hover:text-cyan-300 transition font-medium">Savings</a>
+         <a href="#" class="hover:text-cyan-300 transition font-medium">Insurance</a>
+        <a href="#" class="hover:text-cyan-300 transition font-medium">About</a>
+        <a href="#" class="hover:text-cyan-300 transition font-medium">Contact</a>
+      </div>
+
+      <a href="#" class="hidden md:inline-flex px-6 py-3 bg-cyan-500 text-slate-950 font-semibold rounded-full hover:bg-cyan-400 hover:shadow-xl transition shadow-md">
+        Apply for Loan
+      </a>
+      <button class="md:hidden text-slate-600">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </nav>
+  </header>
+  
+  <section class="relative bg-gradient-to-br from-slate-50 via-white to-cyan-50/50 pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="absolute top-10 left-0 w-1/3 h-full bg-[radial-gradient(circle_at_30%_50%,#bae6fd,transparent_60%)] opacity-30 pointer-events-none"></div>
+    <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 text-center relative">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-800 text-sm font-semibold tracking-wide mb-6 border border-cyan-200/50">💰 fast · fair · flexible</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+        Loans to help you <span class="text-cyan-600">grow</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
+        No collateral, no hidden fees. From business expansion to school fees — get the funds you need, when you need them.
+      </p>
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="#" class="inline-flex px-6 py-3 bg-cyan-600 text-white font-semibold rounded-xl shadow-md hover:bg-cyan-700 transition">Check your eligibility</a>
+        <a href="#" class="inline-flex px-6 py-3 bg-white border border-cyan-200 text-cyan-700 font-semibold rounded-xl hover:bg-cyan-50 transition">How it works</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-cyan-700">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-white font-semibold text-sm tracking-widest uppercase">why microgrow</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-4 text-black">Loans designed for real life</h2>
+        <p class="text-black">Simple terms, quick decisions — and a repayment plan that fits your cash flow.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-slate-50/60 rounded-2xl p-8 border border-slate-100 hover:border-cyan-200 transition loan-card-hover">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-2xl mb-6">⚡</div>
+          <h3 class="text-xl font-bold mb-3">Same-day approval</h3>
+          <p class="text-slate-600">Apply online or via USSD and get a decision in minutes. Funds sent directly to M-Pesa.</p>
+        </div>
+        <div class="bg-slate-50/60 rounded-2xl p-8 border border-slate-100 hover:border-cyan-200 transition loan-card-hover">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-2xl mb-6">📉</div>
+          <h3 class="text-xl font-bold mb-3">Rates from 5% p.m.</h3>
+          <p class="text-slate-600">No compounding tricks. What you see is what you pay — reducing balance method.</p>
+        </div>
+        <div class="bg-slate-50/60 rounded-2xl p-8 border border-slate-100 hover:border-cyan-200 transition loan-card-hover">
+          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-2xl mb-6">🤝</div>
+          <h3 class="text-xl font-bold mb-3">No collateral</h3>
+          <p class="text-slate-600">We lend based on character, cash flow, and group guarantee — not land or assets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-slate-50/70">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-5">Choose the right loan for you</h2>
+      <p class="text-center text-slate-500 max-w-xl mx-auto mb-16">Flexible amounts, fair terms — all with free insurance on qualifying loans.</p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col loan-card-hover">
+          <div class="h-36 bg-gradient-to-br from-emerald-50 to-slate-50 rounded-2xl flex items-center justify-center text-5xl mb-6 border border-emerald-200">
+            <img src="Images/biashara.jpg" alt="Biashara Loan" class="w-full h-full rounded-xl object-cover">
+          </div>
+          <h3 class="text-2xl font-bold mb-1">Biashara loan</h3>
+          <p class="text-slate-500 text-sm mb-4">Working capital, stock, or expansion</p>
+          <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
+            <li class="flex gap-2">✅ KSh 5,000 – 500,000</li>
+            <li class="flex gap-2">✅ Repayment: 1 – 12 months</li>
+            <li class="flex gap-2">✅ Group or individual</li>
+          </ul>
+          <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Apply →</a>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col loan-card-hover">
+          <div class="h-36 bg-gradient-to-br from-green-50 to-slate-50 rounded-2xl flex items-center justify-center text-5xl mb-6 border border-green-200">
+            <img src="Images/Funny Girl Farm_ A Seriously Fresh Farm Stand - Best of the Bull.jpg" alt="Kilimo Boost" class="w-full h-full rounded-xl object-cover">
+          </div>
+          <h3 class="text-2xl font-bold mb-1">Kilimo boost</h3>
+          <p class="text-slate-500 text-sm mb-4">Seeds, fertiliser, livestock, equipment</p>
+          <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
+            <li class="flex gap-2">✅ KSh 3,000 – 300,000</li>
+            <li class="flex gap-2">✅ Flexible around harvest</li>
+            <li class="flex gap-2">✅ Free vet advice included</li>
+          </ul>
+          <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Apply →</a>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col loan-card-hover">
+          <div class="h-36 bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl flex items-center justify-center text-5xl mb-6 border border-blue-200">
+            <img src="Images/A teacher inspires students in a classroom in the….jpg" alt="Elimu Fees" class="w-full h-full rounded-xl object-cover">
+          </div>
+          <h3 class="text-2xl font-bold mb-1">Elimu fees</h3>
+          <p class="text-slate-500 text-sm mb-4">Primary, secondary, or college fees</p>
+          <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
+            <li class="flex gap-2">✅ KSh 2,000 – 200,000</li>
+            <li class="flex gap-2">✅ up to 9 months</li>
+            <li class="flex gap-2">✅ Paid directly to school</li>
+          </ul>
+          <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Apply →</a>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col loan-card-hover">
+          <div class="h-36 bg-gradient-to-br from-amber-50 to-slate-50 rounded-2xl flex items-center justify-center text-5xl mb-6 border border-amber-200">
+            <img src="Images/Boda Boda, Taxi Motorbike.jpg" alt="Boda boda Insurance" class="w-full h-full rounded-xl object-cover">
+          </div>
+          <h3 class="text-2xl font-bold mb-1">Boda boda</h3>
+          <p class="text-slate-500 text-sm mb-4">Purchase or repair a bike</p>
+          <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
+            <li class="flex gap-2">✅ up to KSh 150,000</li>
+            <li class="flex gap-2">✅ 3–12 months</li>
+            <li class="flex gap-2">✅ Includes personal accident cover</li>
+          </ul>
+          <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Apply →</a>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col loan-card-hover">
+          <div class="h-36 bg-gradient-to-br from-purple-50 to-slate-50 rounded-2xl flex items-center justify-center text-5xl mb-6 border border-purple-200">
+<img src="Images/A Butterfly Unfolding.jpg" alt="Nguvu za mama" class="w-full h-full rounded-xl object-cover">
+          </div>
+          <h3 class="text-2xl font-bold mb-1">Nguvu ya Mama</h3>
+          <p class="text-slate-500 text-sm mb-4">For women-owned micro-businesses</p>
+          <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
+            <li class="flex gap-2">✅ KSh 4,000 – 250,000</li>
+            <li class="flex gap-2">✅ Lower interest (from 4%)</li>
+            <li class="flex gap-2">✅ Business training included</li>
+          </ul>
+          <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Apply →</a>
+        </div>
+        <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col loan-card-hover">
+          <div class="h-36 bg-gradient-to-br from-rose-50 to-slate-50 rounded-2xl flex items-center justify-center text-5xl mb-6 border border-rose-200">
+            <img src="Images/Motorola Solutions lands AU$100m extension deal with Ambulance Victoria.jpg" alt="Emergency" class="w-full h-full rounded-xl object-cover">
+          </div>
+          <h3 class="text-2xl font-bold mb-1">Haraka emergency</h3>
+          <p class="text-slate-500 text-sm mb-4">Medical, funeral, urgent needs</p>
+          <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
+            <li class="flex gap-2">✅ KSh 1,000 – 50,000</li>
+            <li class="flex gap-2">✅ 1–4 months</li>
+            <li class="flex gap-2">✅ Decision in 10 minutes</li>
+          </ul>
+          <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Apply →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-cyan-700">
+    <div class="max-w-5xl mx-auto px-5">
+      <h2 class="text-3xl text-white md:text-4xl font-bold text-center mb-5">Borrow in four simple steps</h2>
+      <p class="text-center text-black mb-16">No queues, no paperwork — just your phone.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
+          <h3 class="font-semibold mb-1">Check offer</h3>
+          <p class="text-white text-sm">Dial *123# or use our app</p>
+        </div>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
+          <h3 class="font-semibold mb-1">Pick amount</h3>
+          <p class="text-white text-sm">Choose what fits your need</p>
+        </div>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
+          <h3 class="font-semibold mb-1">Accept terms</h3>
+          <p class="text-white text-sm">Read & confirm via SMS</p>
+        </div>
+        <div>
+          <div class="w-14 h-14 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
+          <h3 class="font-semibold mb-1">Get money</h3>
+          <p class="text-white text-sm">M-Pesa within minutes</p>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="#" class="inline-flex px-8 py-4 bg-cyan-600 text-white rounded-xl font-bold transition shadow-md">Start application</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-slate-50/60 border-y border-slate-100">
+    <div class="max-w-4xl mx-auto px-5 text-center">
+      <span class="text-cyan-600 font-semibold text-sm tracking-widest uppercase">no surprises</span>
+      <h2 class="text-2xl md:text-3xl font-bold mt-2 mb-6">Simple, transparent pricing</h2>
+      <div class="grid md:grid-cols-3 gap-6 text-left bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+        <div>
+          <p class="text-sm text-slate-400">INTEREST (monthly)</p>
+          <p class="text-2xl font-bold text-slate-900">5% – 9%</p>
+          <p class="text-xs text-slate-500">reducing balance</p>
+        </div>
+        <div>
+          <p class="text-sm text-slate-400">LOAN FEE</p>
+          <p class="text-2xl font-bold text-slate-900">0%</p>
+          <p class="text-xs text-slate-500">no admin fee</p>
+        </div>
+        <div>
+          <p class="text-sm text-slate-400">LATE PENALTY</p>
+          <p class="text-2xl font-bold text-slate-900">2%</p>
+          <p class="text-xs text-slate-500">one‑time, not daily</p>
+        </div>
+      </div>
+      <p class="text-xs text-slate-400 mt-6">APR range 24% – 48% depending on amount and term. Licensed & supervised by CBK.</p>
+    </div>
+  </section>
+
+
+  <section class="py-20 bg-cyan-800">
+    <div class="max-w-6xl mx-auto px-5">
+      <h2 class="text-3xl text-black md:text-4xl font-bold text-center mb-5">Real people,real growth</h2>
+      <p class="text-center text-white max-w-xl mx-auto mb-16">Thousands of Kenyans have used our loans to take the next step.</p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-slate-50 p-6 rounded-2xl flex flex-col sm:flex-row gap-5 items-start border border-slate-100">
+          <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center text-2xl shrink-0">👩🏾</div>
+          <div>
+            <p class="italic text-slate-700">“With a KSh 20,000 biashara loan, I bought more stock for my kiosk. I’ve since doubled my sales and hired a helper.”</p>
+            <p class="font-bold mt-3">Grace Achieng’</p>
+            <p class="text-sm text-slate-500">Kisumu</p>
+          </div>
+        </div>
+        <div class="bg-slate-50 p-6 rounded-2xl flex flex-col sm:flex-row gap-5 items-start border border-slate-100">
+          <div class="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center text-2xl shrink-0">👨🏾</div>
+          <div>
+            <p class="italic text-slate-700">“My Kilimo loan helped me buy a water pump. Now my vegetables survive the dry season and I supply to local hotels.”</p>
+            <p class="font-bold mt-3">Peter Njoroge</p>
+            <p class="text-sm text-slate-500">Kiambu</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 bg-slate-50/70">
+    <div class="max-w-3xl mx-auto px-5">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-5">Loan <span class="text-cyan-600">FAQ</span></h2>
+      <p class="text-center text-slate-500 mb-12">Answers to common questions.</p>
+      <div class="space-y-3">
+        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
+          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
+            What do I need to qualify?
+            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
+          </summary>
+          <div class="px-5 pb-5 text-slate-600 text-sm">Kenyan ID, active M-Pesa line, and a consistent income (business or employment). No collateral needed.</div>
+        </details>
+        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
+          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
+            How fast will I receive the money?
+            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
+          </summary>
+          <div class="px-5 pb-5 text-slate-600 text-sm">If approved before 4pm, money is sent to your M-Pesa within 1 hour. Most approvals are instant.</div>
+        </details>
+        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
+          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
+            Can I repay early?
+            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
+          </summary>
+          <div class="px-5 pb-5 text-slate-600 text-sm">Yes — no penalty. You only pay interest for the days you used the money.</div>
+        </details>
+        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
+          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
+            What if I miss a payment?
+            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
+          </summary>
+          <div class="px-5 pb-5 text-slate-600 text-sm">We’ll send a reminder. A one‑time late fee of 2% applies, not daily compounding. We work with you to restructure if needed.</div>
+        </details>
+        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
+          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
+            Do you offer loans to groups?
+            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
+          </summary>
+          <div class="px-5 pb-5 text-slate-600 text-sm">Yes — we specialise in group loans (chamas, village banks). Higher limits and shared responsibility.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-cyan-800 text-white">
+    <div class="max-w-3xl mx-auto px-5 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to grow with us?</h2>
+      <p class="text-lg text-cyan-100 mb-8">Check your loan limit in seconds — no obligation, no hard check.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#" class="inline-block bg-white text-cyan-800 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-slate-50 transition">Check my limit</a>
+        <a href="#" class="inline-block border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition">Call *123#</a>
+      </div>
+      <p class="text-sm text-cyan-200 mt-6">Questions? Talk to our loan officer: +254 700 123 456</p>
+    </div>
+  </section>
+
+  
+  <footer class="bg-slate-900 text-slate-400 py-14">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
+      <div>
+        <span class="text-xl font-bold text-white">MicroGrow<span class="text-cyan-400">.</span></span>
+        <p class="mt-4 text-sm leading-relaxed">Licensed by Central Bank of Kenya. Fair loans since 2015.</p>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Loans</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-cyan-300 transition">Biashara</a></li>
+          <li><a href="#" class="hover:text-cyan-300 transition">Kilimo</a></li>
+          <li><a href="#" class="hover:text-cyan-300 transition">Elimu</a></li>
+          <li><a href="#" class="hover:text-cyan-300 transition">Boda boda</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Contact</h4>
+        <p class="text-sm">Nairobi, Kenya<br>+254 700 123 456<br>loans@microgrow.co.ke</p>
+      </div>
+      <div>
+        <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Legal</h4>
+        <p class="text-sm">CBK licensed · T&amp;Cs · Privacy · Complaints</p>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 mt-10 pt-6 text-center text-xs text-slate-500">
+      © 2026 MicroGrow Financial Institute. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
