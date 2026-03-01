@@ -2,11 +2,11 @@
 This project contains the official company pages built with HTML and Tailwind CSS.  
 It's designed to be clean, modern, and easy to navigate — reflecting MicroGrow's mission of transparent, accessible finance for Kenyans.
 **PAGE BREAKDOWN**
-•	Page 1: Landing page-website name. a background image that is relevant, short description of the specific microfinance institution
-•	Page 2: About microfinance and the institution- Definition of microfinance, Brief history of the institution, Purpose and importance and Who it serves (low-income earners, small businesses, rural communities).
-•	Page 3: Services offered- micro-loans, savings accounts, financial literacy, training, insurance services and group lending programs.
-•	Page 4 : How it works- the application process, loan assessments, repayment plan, monitoring and support.
-•	Page 5 : Contact page- How to reach the website's main HQ
+• Landing page-website name. a background image that is relevant, short description of the specific microfinance institution
+. About microfinance and the institution- Definition of microfinance, Brief history of the institution, Purpose and importance and Who it serves (low-income earners, small businesses, rural communities).
+• Services offered- micro-loans, savings accounts, financial literacy, training, insurance services and group lending programs.
+• How it works- the application process, loan assessments, repayment plan, monitoring and support.
+• Contact page- How to reach the website's main HQ
 
 
 
