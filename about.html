@@ -8,14 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
 
   <style>
     body { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
-    details summary::-webkit-details-marker { display: none; }
     .hover-lift { transition: all 0.2s ease; }
-    .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 20px 30px -10px rgba(0,150,200,0.2); }
+    .hover-lift:hover { transform: translateY(-4px); }
   </style>
 </head>
 
@@ -32,15 +29,15 @@
       </div>
 
       <div class="hidden md:flex items-center gap-9 text-cyan-100/90">
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Home</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Loans</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Savings</a>
-         <a href="#" class="hover:text-cyan-300 transition font-medium">Insurance</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">About</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Contact</a>
+        <a href="index.html" class="hover:text-cyan-300 transition font-medium">Home</a>
+        <a href="loans.html" class="hover:text-cyan-300 transition font-medium">Loans</a>
+        <a href="savings.html" class="hover:text-cyan-300 transition font-medium">Savings</a>
+         <a href="insurance.html" class="hover:text-cyan-300 transition font-medium">Insurance</a>
+        <a href="about.html" class="hover:text-cyan-300 transition font-medium">About</a>
+        <a href="contact.html" class="hover:text-cyan-300 transition font-medium">Contact</a>
       </div>
 
-      <a href="#" class="hidden md:inline-flex px-6 py-3 bg-cyan-500 text-slate-950 font-semibold rounded-full hover:bg-cyan-400 hover:shadow-xl transition shadow-md">
+      <a href="loans.html" class="hidden md:inline-flex px-6 py-3 bg-cyan-500 text-slate-950 font-semibold rounded-full hover:bg-cyan-400 hover:shadow-xl transition shadow-md">
         Apply for Loan
       </a>
       <button class="md:hidden text-slate-600">
@@ -54,7 +51,6 @@
   <section class="relative bg-cyan-700 pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
     <div class="absolute top-0 right-0 w-2/3 h-full bg-[radial-gradient(circle_at_70%_30%,#bae6fd,transparent_60%)] opacity-30 pointer-events-none"></div>
     <div class="max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 text-center relative">
-      <span class="inline-block px-4 py-1.5 rounded-full bg-cyan-100 text-black-500 text-sm font-semibold tracking-wide mb-6 border border-cyan-200/50">🇰🇪 built for Kenya</span>
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
         About MicroGrow
          </h1>
@@ -76,14 +72,7 @@
           <p>From a single community hall in Nairobi to 18,000+ clients across urban and rural Kenya, we’ve stayed true to that promise. We prioritize women entrepreneurs, smallholder families, and the resilience of the informal sector.</p>
           <p class="font-medium text-slate-900">Today we’re CBK-licensed and proud to be one of the most trusted microfinance partners in the country.</p>
         </div>
-        <div class="mt-8 flex gap-4">
-          <div class="flex -space-x-2">
-            <div class="w-8 h-8 rounded-full bg-cyan-100 border-2 border-white flex items-center justify-center text-xs font-bold text-cyan-800">JM</div>
-            <div class="w-8 h-8 rounded-full bg-cyan-200 border-2 border-white flex items-center justify-center text-xs font-bold text-cyan-800">AK</div>
-            <div class="w-8 h-8 rounded-full bg-cyan-300 border-2 border-white flex items-center justify-center text-xs font-bold text-cyan-900">PW</div>
-          </div>
-          <span class="text-sm text-slate-500">+ 40 dedicated field agents</span>
-        </div>
+      
       </div>
       <div class="order-1 lg:order-2 relative">
         <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-cyan-800 bg-gradient-to-br from-cyan-100 to-slate-100 flex items-center justify-center text-slate-400 relative">
@@ -99,12 +88,10 @@
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
       <div class="grid md:grid-cols-2 gap-8">
         <div class="group bg-white rounded-3xl p-8 shadow-sm border border-cyan-900 hover-lift">
-          <div class="w-12 h-12 rounded-xl bg-white text-black flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">🎯</div>
           <h3 class="text-2xl font-bold mb-3 text-slate-900">Mission</h3>
           <p class="text-slate-900 leading-relaxed">Fast, transparent, affordable finance for underserved Kenyans — helping small businesses bloom and families thrive.</p>
         </div>
         <div class="group bg-white rounded-3xl p-8 shadow-sm border border-cyan-900 hover-lift">
-          <div class="w-12 h-12 rounded-xl bg-white text-black flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition">✨</div>
           <h3 class="text-2xl font-bold mb-3 text-slate-900">Vision</h3>
           <p class="text-slate-600 leading-relaxed">A Kenya where every family has the tools and confidence to build lasting prosperity — starting wherever they are.</p>
         </div>
@@ -199,84 +186,11 @@
       </div>
     </div>
   </section>
-
-  <section class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-bold text-center mb-3">Our Partners</h2>
-      <p class="text-center text-slate-500 mb-14">We're backed and regulated by key institutions.</p>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col items-center hover:border-cyan-200 transition">
-          <div class="h-16 w-16 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl mb-3">🏛️</div>
-          <span class="font-semibold text-sm">CBK</span>
-          <span class="text-xs text-slate-400">Regulator</span>
-        </div>
-        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col items-center hover:border-cyan-200 transition">
-          <div class="h-16 w-16 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl mb-3">🤝</div>
-          <span class="font-semibold text-sm">AMFI-K</span>
-          <span class="text-xs text-slate-400">Association</span>
-        </div>
-        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col items-center hover:border-cyan-200 transition">
-          <div class="h-16 w-16 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl mb-3">📱</div>
-          <span class="font-semibold text-sm">M-Pesa</span>
-          <span class="text-xs text-slate-400">Payments</span>
-        </div>
-        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col items-center hover:border-cyan-200 transition">
-          <div class="h-16 w-16 bg-white rounded-xl shadow-sm flex items-center justify-center text-2xl mb-3">🛡️</div>
-          <span class="font-semibold text-sm">Insure-tech</span>
-          <span class="text-xs text-slate-400">Microinsurance</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 bg-cyan-700">
-    <div class="max-w-3xl mx-auto px-5">
-      <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-      <div class="space-y-3">
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200 transition">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800 list-none">
-            What is MicroGrow?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm leading-relaxed">CBK-licensed microfinance offering small loans, savings, and insurance to underserved Kenyans — especially women and small entrepreneurs.</div>
-        </details>
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200 transition">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            Collateral needed?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">No. We rely on group guarantees, cash flow, and character — zero traditional collateral.</div>
-        </details>
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200 transition">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            How to apply?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">Online, USSD *123#, branch, or agent. Approval often in 24h.</div>
-        </details>
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200 transition">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            Is my data secure?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">Absolutely. CBK-regulated, we meet strict data protection standards.</div>
-        </details>
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200 transition">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            Contact support?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">Call +254 700 123 456 or email hello@microgrow.co.ke – we're here 8am-6pm.</div>
-        </details>
-      </div>
-    </div>
-  </section>
-
   <section class="py-20 bg-white text-cyan-700">
     <div class="max-w-3xl mx-auto px-5 text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">Join thousands building better futures</h2>
       <p class="text-lg text-cyan-900 mb-8">Whether you're starting a business, saving for school, or protecting your family — we're here.</p>
-      <a href="#" class="inline-block bg-cyan-800 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-cyan-800 transition shadow-cyan-900/30">Start your journey →</a>
+      <a href="loans.html" class="inline-block bg-cyan-800 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-cyan-800 transition shadow-cyan-900/30">Start your journey →</a>
     </div>
   </section>
 
@@ -297,7 +211,7 @@
       </div>
       <div>
         <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Contact</h4>
-        <p class="text-sm">Nairobi, Kenya<br>+254 700 123 456<br>hello@microgrow.co.ke</p>
+        <p class="text-sm">Nairobi, Kenya<br>+254737771881<br>hello@microgrow.co.ke</p>
       </div>
       <div>
         <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Legal</h4>

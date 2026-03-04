@@ -10,17 +10,13 @@
   
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
-
+  
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
-    details summary::-webkit-details-marker { display: none; }
     .hover-glow { transition: all 0.2s; }
-    .hover-glow:hover { box-shadow: 0 10px 25px -5px rgba(6, 182, 212, 0.2); }
   </style>
 </head>
-<body class="bg-white text-slate-800 antialiased selection:bg-cyan-200 selection:text-cyan-900">
+<body class="bg-white text-slate-800 selection:bg-cyan-200 selection:text-cyan-900">
  <header class="bg-black backdrop-blur border-b border-black sticky top-0 z-50">
     <nav class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -33,15 +29,15 @@
       </div>
 
       <div class="hidden md:flex items-center gap-9 text-cyan-100/90">
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Home</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Loans</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Savings</a>
-         <a href="#" class="hover:text-cyan-300 transition font-medium">Insurance</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">About</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Contact</a>
+        <a href="index.html" class="hover:text-cyan-300 transition font-medium">Home</a>
+        <a href="loans.html" class="hover:text-cyan-300 transition font-medium">Loans</a>
+        <a href="savings.html" class="hover:text-cyan-300 transition font-medium">Savings</a>
+         <a href="insurance.html" class="hover:text-cyan-300 transition font-medium">Insurance</a>
+        <a href="about.html" class="hover:text-cyan-300 transition font-medium">About</a>
+        <a href="contact.html" class="hover:text-cyan-300 transition font-medium">Contact</a>
       </div>
 
-      <a href="#" class="hidden md:inline-flex px-6 py-3 bg-cyan-500 text-slate-950 font-semibold rounded-full hover:bg-cyan-400 hover:shadow-xl transition shadow-md">
+      <a href="loans.html" class="hidden md:inline-flex px-6 py-3 bg-cyan-500 text-slate-950 font-semibold rounded-full hover:bg-cyan-400 hover:shadow-xl transition shadow-md">
         Apply for Loan
       </a>
       <button class="md:hidden text-slate-600">
@@ -49,58 +45,30 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
+      
     </nav>
   </header>
- <section class="relative bg-gradient-to-br from-slate-50 via-white to-cyan-50/50 pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
-    <div class="absolute top-10 right-0 w-1/3 h-full bg-[radial-gradient(circle_at_70%_30%,#a5f3fc,transparent_60%)] opacity-30 pointer-events-none"></div>
+
+   <section class="relative bg-gradient-to-br from-gray-50 via-white to-cyan-800/5 pt-20 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+    <div class="absolute top-10 right-0 w-full h-full bg-white opacity-5 pointer-events-none"></div>
     <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 text-center relative">
-      <span class="inline-block px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-800 text-sm font-semibold tracking-wide mb-6 border border-cyan-200/50">🛡️ protect what matters</span>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
-        Insurance for <span class="text-cyan-600">every Kenyan</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+        Insurance built for you <span class="text-cyan-800">,not for profit</span>
       </h1>
-      <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto">
-        Simple, affordable microinsurance — health, family, farm, and life. Because everyone deserves a safety net.
+      <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+       No hidden cost, just real cover for real people. Choose what chooses you.
       </p>
       <div class="mt-10 flex flex-wrap justify-center gap-4">
-        <a href="#" class="inline-flex px-6 py-3 bg-cyan-600 text-white font-semibold rounded-xl shadow-md hover:bg-cyan-700 transition">Explore plans</a>
-        <a href="#" class="inline-flex px-6 py-3 bg-white border border-cyan-200 text-cyan-700 font-semibold rounded-xl hover:bg-cyan-50 transition">Talk to an agent</a>
+        <a href="#plans" class="inline-flex px-6 py-3 bg-cyan-800 text-white font-semibold rounded-xl shadow-md hover:bg-cyan-700 transition">See available options</a>
+        <a href="#" class="inline-flex px-6 py-3 bg-white border border-cyan-800/30 text-cyan-800 font-semibold rounded-xl hover:bg-cyan-800/5 transition">Get your cover now</a>
       </div>
     </div>
   </section>
 
- 
-  <section class="py-20 bg-cyan-700">
-    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-white font-semibold text-sm tracking-widest uppercase">why choose microgrow</span>
-        <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-4 text-slate-900">Insurance built for you, not for profit</h2>
-        <p class="text-white">No fine print, no hidden costs — just real cover for real people.</p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-slate-50/60 rounded-2xl p-8 border border-slate-100 hover:border-cyan-200 transition hover-glow">
-          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-2xl mb-6">⚡</div>
-          <h3 class="text-xl font-bold mb-3">Fast claims</h3>
-          <p class="text-slate-600">90% of claims paid within 48 hours. No bureaucracy, just M-Pesa direct.</p>
-        </div>
-        <div class="bg-slate-50/60 rounded-2xl p-8 border border-slate-100 hover:border-cyan-200 transition hover-glow">
-          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-2xl mb-6">📱</div>
-          <h3 class="text-xl font-bold mb-3">Via mobile</h3>
-          <p class="text-slate-600">Buy, renew or claim by USSD or app — even if you don’t have a smartphone.</p>
-        </div>
-        <div class="bg-slate-50/60 rounded-2xl p-8 border border-slate-100 hover:border-cyan-200 transition hover-glow">
-          <div class="w-12 h-12 rounded-xl bg-cyan-100 text-cyan-700 flex items-center justify-center text-2xl mb-6">👨🏾‍🌾</div>
-          <h3 class="text-xl font-bold mb-3">Rural first</h3>
-          <p class="text-slate-600">Plans tailored for farmers, boda riders, and informal workers — no exclusions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 bg-cyan-700">
+ <section id="plans" class="py-20 bg-cyan-700">
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
       <h2 class="text-3xl text-white md:text-4xl font-bold text-center mb-5">Our Insurance Plans</h2>
-      <p class="text-center text-black max-w-xl mx-auto mb-16">Simple cover, affordable premiums — pick what fits your life.</p>
+      <p class="text-center text-black max-w-xl mx-auto mb-16">Simple cover, affordable premiums ,pick what fits your life.</p>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 flex flex-col hover:shadow-md transition">
@@ -110,9 +78,9 @@
           <h3 class="text-2xl font-bold mb-2">Family Health</h3>
           <p class="text-slate-500 text-sm mb-4">Inpatient, outpatient, maternity & medicines</p>
           <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
-            <li class="flex gap-2">✅ Covers up to 6 family members</li>
-            <li class="flex gap-2">✅ 200+ partner clinics nationwide</li>
-            <li class="flex gap-2">✅ From KSh 299/month</li>
+            <li class="flex gap-2">- Covers up to 6 family members</li>
+            <li class="flex gap-2">- 200+ partner clinics nationwide</li>
+            <li class="flex gap-2">- From KSh 299/month</li>
           </ul>
           <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Learn more →</a>
         </div>
@@ -123,9 +91,9 @@
           <h3 class="text-2xl font-bold mb-2">Boda Boda Cover</h3>
           <p class="text-slate-500 text-sm mb-4">Personal accident + hospital cash for riders</p>
           <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
-            <li class="flex gap-2">✅ 24/7 accident & disability cover</li>
-            <li class="flex gap-2">✅ Daily hospital cash (KSh 1,000)</li>
-            <li class="flex gap-2">✅ From KSh 199/week</li>
+            <li class="flex gap-2">- 24/7 accident & disability cover</li>
+            <li class="flex gap-2">- Daily hospital cash (KSh 1,000)</li>
+            <li class="flex gap-2">- From KSh 199/week</li>
           </ul>
           <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Learn more →</a>
         </div>
@@ -136,9 +104,9 @@
           <h3 class="text-2xl font-bold mb-2">Farm & Livestock</h3>
           <p class="text-slate-500 text-sm mb-4">Crops, cows, goats & poultry</p>
           <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
-            <li class="flex gap-2">✅ Drought / flood / disease cover</li>
-            <li class="flex gap-2">✅ Free vet advice hotline</li>
-            <li class="flex gap-2">✅ Premiums as low as 3% of sum insured</li>
+            <li class="flex gap-2">- Drought / flood / disease cover</li>
+            <li class="flex gap-2">- Free vet advice hotline</li>
+            <li class="flex gap-2">- Premiums as low as 3% of sum insured</li>
           </ul>
           <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Learn more →</a>
         </div>
@@ -149,9 +117,9 @@
           <h3 class="text-2xl font-bold mb-2">Life & Funeral</h3>
           <p class="text-slate-500 text-sm mb-4">Term life + funeral cash benefit</p>
           <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
-            <li class="flex gap-2">✅ Up to KSh 500,000 cover</li>
-            <li class="flex gap-2">✅ Immediate payout within 24h</li>
-            <li class="flex gap-2">✅ From KSh 99/month</li>
+            <li class="flex gap-2">- Up to KSh 500,000 cover</li>
+            <li class="flex gap-2">- Immediate payout within 24h</li>
+            <li class="flex gap-2">- From KSh 99/month</li>
           </ul>
           <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Learn more →</a>
         </div>
@@ -162,9 +130,9 @@
           <h3 class="text-2xl font-bold mb-2">Education Protect</h3>
           <p class="text-slate-500 text-sm mb-4">Covers school fees in case of emergency</p>
           <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
-            <li class="flex gap-2">✅ Fees paid directly to school</li>
-            <li class="flex gap-2">✅ Covers up to 3 terms</li>
-            <li class="flex gap-2">✅ Add‑on to any life policy</li>
+            <li class="flex gap-2">- Fees paid directly to school</li>
+            <li class="flex gap-2">- Covers up to 3 terms</li>
+            <li class="flex gap-2">- Add‑on to any life policy</li>
           </ul>
           <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Learn more →</a>
         </div>
@@ -175,9 +143,9 @@
           <h3 class="text-2xl font-bold mb-2">Biashara Asset</h3>
           <p class="text-slate-500 text-sm mb-4">Stock, tools, and small shop cover</p>
           <ul class="space-y-2 text-sm text-slate-600 mb-6 flex-1">
-            <li class="flex gap-2">✅ Fire, theft, and flood protection</li>
-            <li class="flex gap-2">✅ Fast assessment via agent</li>
-            <li class="flex gap-2">✅ Premium based on business size</li>
+            <li class="flex gap-2">- Fire, theft, and flood protection</li>
+            <li class="flex gap-2">- Fast assessment via agent</li>
+            <li class="flex gap-2">- Premium based on business size</li>
           </ul>
           <a href="#" class="inline-block w-full text-center py-3 border border-cyan-600 text-cyan-700 rounded-xl font-semibold hover:bg-cyan-50 transition">Learn more →</a>
         </div>
@@ -188,7 +156,7 @@
   <section class="py-20 bg-white">
     <div class="max-w-5xl mx-auto px-5">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-5">Get covered in <span class="text-cyan-600">three steps</span></h2>
-      <p class="text-center text-slate-500 mb-16">No paperwork, no waiting — just peace of mind.</p>
+      <p class="text-center text-slate-500 mb-16">No paperwork, no waiting ,just peace of mind.</p>
 
       <div class="grid sm:grid-cols-3 gap-8 text-center">
         <div>
@@ -214,91 +182,26 @@
     <div class="max-w-6xl mx-auto px-5 text-center">
       <p class="text-sm uppercase tracking-wider text-slate-400 mb-6">Backed by trusted partners & regulators</p>
       <div class="flex flex-wrap justify-center items-center gap-10 gap-y-6 text-slate-500">
-        <span class="text-lg font-semibold text-slate-700">🇰🇪 CBK licensed</span>
+        <span class="text-lg font-semibold text-slate-700"> CBK licensed</span>
         <span class="text-slate-300">|</span>
-        <span class="text-lg font-semibold text-slate-700">🏛️ AMFI-K</span>
+        <span class="text-lg font-semibold text-slate-700"> AMFI-K</span>
         <span class="text-slate-300 hidden sm:inline">|</span>
-        <span class="text-lg font-semibold text-slate-700">📱 M-Pesa partner</span>
+        <span class="text-lg font-semibold text-slate-700"> M-Pesa partner</span>
         <span class="text-slate-300">|</span>
-        <span class="text-lg font-semibold text-slate-700">🛡️ IRA reinsured</span>
+        <span class="text-lg font-semibold text-slate-700"> IRA reinsured</span>
       </div>
     </div>
   </section>
 
-
-  <section class="py-20 bg-cyan-700">
-    <div class="max-w-4xl mx-auto px-5 text-center">
-      <span class="text-white font-semibold text-sm tracking-widest uppercase">real stories</span>
-      <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-12">What our members say</h2>
-      <div class="bg-slate-50 rounded-3xl p-8 md:p-10 border border-slate-100 relative">
-        <div class="text-5xl text-black absolute top-4 left-6">“</div>
-        <p class="text-lg md:text-xl text-slate-700 italic relative z-10 max-w-2xl mx-auto">
-          “When my motorcycle was in an accident, MicroGrow paid my hospital cash within 24 hours. I could pay the bills and get back on the road in a week.”
-        </p>
-        <div class="mt-6 flex items-center justify-center gap-4">
-          <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-xl">👨🏾</div>
-          <div class="text-left">
-            <p class="font-bold">Samuel Omondi</p>
-            <p class="text-sm text-slate-500">Boda rider, Kisumu</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 bg-slate-50/70">
-    <div class="max-w-3xl mx-auto px-5">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-5">Insurance <span class="text-cyan-600">FAQ</span></h2>
-      <p class="text-center text-slate-500 mb-12">Quick answers about cover, claims and costs.</p>
-      <div class="space-y-3">
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            Can I insure my shamba (farm)?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">Yes — we cover maize, beans, livestock, and even poultry against drought, floods, and disease. Talk to our agent for a simple assessment.</div>
-        </details>
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            How do I file a claim?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">Call our toll-free line 0800 123 456 or simply send "CLAIM" to 12345. We'll call you back within 2 hours.</div>
-        </details>
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            Is there an age limit?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">For life cover, we accept members from 18 to 70 years. Health and accident plans cover all ages — children included.</div>
-        </details>
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            Can I pay daily / weekly?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">Absolutely. Most plans offer daily, weekly or monthly M-Pesa payments. No penalty if you miss — we'll send a reminder.</div>
-        </details>
-        <details class="group bg-white rounded-2xl shadow-sm border border-slate-200 open:border-cyan-200">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-slate-800">
-            Do you cover pre-existing conditions?
-            <span class="text-cyan-500 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-slate-600 text-sm">Some of our health plans cover chronic conditions after a 3-month waiting period. Chat with our agent to find the right fit.</div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 bg-cyan-700 text-white">
+  <section id="agent" class="py-20 bg-cyan-700 text-white">
     <div class="max-w-3xl mx-auto px-5 text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to protect what matters?</h2>
       <p class="text-lg text-cyan-100 mb-8">Join thousands of Kenyans who sleep soundly knowing they're covered.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#" class="inline-block bg-white text-cyan-800 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-slate-50 transition">Find a plan</a>
+        <a href="#plans" class="inline-block bg-white text-cyan-800 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-slate-50 transition">Find a plan</a>
         <a href="#" class="inline-block border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition">Call *123#</a>
       </div>
-      <p class="text-sm text-cyan-200 mt-6">Or speak to an agent: +254 700 123 456</p>
+      <p class="text-sm text-cyan-200 mt-6">Or speak to an agent: +254 737771881</p>
     </div>
   </section>
 
@@ -313,14 +216,14 @@
         <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Insurance</h4>
         <ul class="space-y-2 text-sm">
           <li><a href="#" class="hover:text-cyan-300 transition">Health</a></li>
-          <li><a href="#" class="hover:text-cyan-300 transition">Boda bod</a></li>
+          <li><a href="#" class="hover:text-cyan-300 transition">Boda boda</a></li>
           <li><a href="#" class="hover:text-cyan-300 transition">Farm</a></li>
           <li><a href="#" class="hover:text-cyan-300 transition">Life & funeral</a></li>
         </ul>
       </div>
       <div>
         <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Contact</h4>
-        <p class="text-sm">Nairobi, Kenya<br>+254 700 123 456<br>insurance@microgrow.co.ke</p>
+        <p class="text-sm">Nairobi, Kenya<br>+254 737771881<br>insurance@microgrow.co.ke</p>
       </div>
       <div>
         <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Legal</h4>

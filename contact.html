@@ -9,8 +9,7 @@
   
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..700&display=swap" rel="stylesheet">
+  
 
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
@@ -30,15 +29,15 @@
       </div>
 
       <div class="hidden md:flex items-center gap-9 text-cyan-100/90">
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Home</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Loans</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Savings</a>
-         <a href="#" class="hover:text-cyan-300 transition font-medium">Insurance</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">About</a>
-        <a href="#" class="hover:text-cyan-300 transition font-medium">Contact</a>
+        <a href="index.html" class="hover:text-cyan-300 transition font-medium">Home</a>
+        <a href="loans.html" class="hover:text-cyan-300 transition font-medium">Loans</a>
+        <a href="savings.html" class="hover:text-cyan-300 transition font-medium">Savings</a>
+         <a href="insurance.html" class="hover:text-cyan-300 transition font-medium">Insurance</a>
+        <a href="about.html" class="hover:text-cyan-300 transition font-medium">About</a>
+        <a href="contact.html" class="hover:text-cyan-300 transition font-medium">Contact</a>
       </div>
 
-      <a href="#" class="hidden md:inline-flex px-6 py-3 bg-cyan-500 text-slate-950 font-semibold rounded-full hover:bg-cyan-400 hover:shadow-xl transition shadow-md">
+      <a href="loans.html" class="hidden md:inline-flex px-6 py-3 bg-cyan-500 text-slate-950 font-semibold rounded-full hover:bg-cyan-400 hover:shadow-xl transition shadow-md">
         Apply for Loan
       </a>
       <button class="md:hidden text-slate-600">
@@ -50,10 +49,9 @@
   </header>
 
   
-  <section class="relative bg-gradient-to-br from-cyan-500 via-white to-cyan-900 pt-20 pb-16 md:pt-28 md:pb-20 overflow-hidden">
-    <div class="absolute top-10 left-0 w-1/3 h-full bg-[radial-gradient(circle_at_30%_50%,#0e7490,transparent_60%)] opacity-5 pointer-events-none"></div> <!-- cyan-700 -->
+  <section class="w-full h-full relative bg-gradient-to-br from-cyan-500 via-white to-cyan-900 pt-30 pb-30 mb-25 md:pt-28 md:pb-20 overflow-hidden">
+    <div class="absolute top-10 left-0 w-full h-full bg-cyan-700 opacity-5 pointer-events-none"></div>
     <div class="max-w-4xl mx-auto px-5 sm:px-6 lg:px-8 text-center relative">
-      <span class="inline-block px-4 py-1.5 rounded-full bg-cyan-700/10 text-cyan-700 text-sm font-semibold tracking-wide mb-6 border border-cyan-700/20">📞 we're here to help</span>
       <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-black mb-6">
         Get in <span class="text-cyan-700">touch</span>
       </h1>
@@ -72,28 +70,26 @@
             <h2 class="text-2xl font-bold text-black mb-6">Contact information</h2>
             <div class="space-y-5">
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-cyan-700/10 flex items-center justify-center text-cyan-700 shrink-0 mt-1">📍</div>
                 <div>
                   <p class="font-medium text-black">Head office</p>
                   <p class="text-black/70 text-sm">MicroGrow Plaza, Moi Avenue<br>Nairobi, Kenya</p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-cyan-700/10 flex items-center justify-center text-cyan-700 shrink-0 mt-1">📞</div>
+                
                 <div>
                   <p class="font-medium text-black">Phone & USSD</p>
                   <p class="text-black/70 text-sm">+254 700 123 456<br>Dial *123# from any network</p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-cyan-700/10 flex items-center justify-center text-cyan-700 shrink-0 mt-1">✉️</div>
-                <div>
+                
                   <p class="font-medium text-black">Email</p>
                   <p class="text-black/70 text-sm">hello@microgrow.co.ke<br>support@microgrow.co.ke</p>
                 </div>
               </div>
               <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-lg bg-cyan-700/10 flex items-center justify-center text-cyan-700 shrink-0 mt-1">⏰</div>
+          
                 <div>
                   <p class="font-medium text-black">Hours</p>
                   <p class="text-black/70 text-sm">Mon–Fri: 8am – 6pm<br>Sat: 9am – 2pm<br>Sun & holidays: closed</p>
@@ -126,82 +122,61 @@
             </select>
           </div>
         </div>
-
-    
-        <div class="lg:col-span-2 grid md:grid-cols-2 gap-8">
+        <br>
+        <div class="lg:col-span-3 justify-between grid md:grid-cols-2 gap-8">
           
           <div class="bg-black/5 rounded-2xl p-6 border border-black/10">
             <h3 class="text-xl font-bold text-black mb-5">Send us a message</h3>
             <form class="space-y-4">
               <div>
                 <label class="block text-sm font-medium text-black/80 mb-1">Full name</label>
-                <input type="text" class="w-full p-3 border border-black/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-700/20 bg-white" placeholder="e.g. Jane Mwangi">
+                <input type="text" class="w-full p-3 border border-black/10 rounded-xl bg-white" placeholder="e.g. Jane Mwangi">
               </div>
               <div>
                 <label class="block text-sm font-medium text-black/80 mb-1">Phone number</label>
-                <input type="tel" class="w-full p-3 border border-black/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-700/20 bg-white" placeholder="07XX XXX XXX">
+                <input type="tel" class="w-full p-3 border border-black/10 rounded-xl bg-white" placeholder="07XX XXX XXX">
               </div>
               <div>
                 <label class="block text-sm font-medium text-black/80 mb-1">Email (optional)</label>
-                <input type="email" class="w-full p-3 border border-black/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-700/20 bg-white" placeholder="you@example.com">
+                <input type="email" class="w-full p-3 border border-black/10 rounded-xl bg-white" placeholder="you@example.com">
               </div>
               <div>
                 <label class="block text-sm font-medium text-black/80 mb-1">Message</label>
-                <textarea rows="3" class="w-full p-3 border border-black/10 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-700/20 bg-white" placeholder="How can we help?"></textarea>
+                <textarea rows="1" class="w-full p-3 border border-black/10 rounded-xl bg-white" placeholder="How can we help?"></textarea>
               </div>
               <button type="submit" class="w-full py-3 bg-cyan-700 text-white font-semibold rounded-xl hover:bg-cyan-600 transition shadow-sm">Send message</button>
             </form>
             <p class="text-xs text-black/50 mt-3">We usually reply within 2 hours during business hours.</p>
           </div>
 
-          <!-- map & agent locator -->
-          <div class="space-y-6">
-            <div class="bg-black/5 rounded-2xl p-6 border border-black/10 h-64 flex flex-col items-center justify-center text-black/40">
-              <div class="text-6xl mb-3">🗺️</div>
-              <p class="text-sm text-center">Interactive map<br><span class="text-black/50">(Nairobi head office)</span></p>
-              <p class="text-xs mt-3">Moi Avenue, next to Kencom</p>
-            </div>
-            <div class="bg-black/5 rounded-2xl p-6 border border-black/10">
-              <h4 class="font-semibold text-black mb-3">Find an agent near you</h4>
-              <div class="flex gap-2">
-                <input type="text" placeholder="Town or landmark" class="flex-1 p-3 border border-black/10 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-cyan-700/20 bg-white">
-                <button class="px-4 py-3 bg-cyan-700 text-white rounded-xl hover:bg-cyan-600 transition text-sm font-medium">Search</button>
-              </div>
-              <p class="text-xs text-black/50 mt-3">Over 200 agent locations nationwide.</p>
-            </div>
-          </div>
+ 
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== BRANCHES SECTION ===== -->
   <section class="py-16 bg-black/5">
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
       <h2 class="text-3xl md:text-4xl font-bold text-center mb-5 text-black">Our <span class="text-cyan-700">branches</span></h2>
-      <p class="text-center text-black/70 max-w-xl mx-auto mb-16">Visit us in person — we're in major towns across Kenya.</p>
+      <p class="text-center text-black/70 max-w-xl mx-auto mb-16">Visit us in person. We're in major towns across Kenya.</p>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-white p-5 rounded-xl border border-black/10 text-center">
-          <div class="w-12 h-12 rounded-full bg-cyan-700/10 flex items-center justify-center text-cyan-700 text-xl mx-auto mb-3">🏛️</div>
           <h3 class="font-bold text-black">Nairobi</h3>
           <p class="text-sm text-black/70">Moi Avenue, 3rd floor</p>
           <p class="text-xs text-black/50 mt-1">Open Mon–Sat</p>
         </div>
         <div class="bg-white p-5 rounded-xl border border-black/10 text-center">
-          <div class="w-12 h-12 rounded-full bg-cyan-700/10 flex items-center justify-center text-cyan-700 text-xl mx-auto mb-3">🏛️</div>
           <h3 class="font-bold text-black">Mombasa</h3>
           <p class="text-sm text-black/70">Digo Road, near Shell</p>
           <p class="text-xs text-black/50 mt-1">Open Mon–Sat</p>
         </div>
         <div class="bg-white p-5 rounded-xl border border-black/10 text-center">
-          <div class="w-12 h-12 rounded-full bg-cyan-700/10 flex items-center justify-center text-cyan-700 text-xl mx-auto mb-3">🏛️</div>
           <h3 class="font-bold text-black">Kisumu</h3>
           <p class="text-sm text-black/70">Oginga Odinga St</p>
           <p class="text-xs text-black/50 mt-1">Open Mon–Sat</p>
         </div>
         <div class="bg-white p-5 rounded-xl border border-black/10 text-center">
-          <div class="w-12 h-12 rounded-full bg-cyan-700/10 flex items-center justify-center text-cyan-700 text-xl mx-auto mb-3">🏛️</div>
           <h3 class="font-bold text-black">Nakuru</h3>
           <p class="text-sm text-black/70">Kenyatta Avenue</p>
           <p class="text-xs text-black/50 mt-1">Open Mon–Sat</p>
@@ -210,57 +185,17 @@
     </div>
   </section>
 
-  <!-- ===== FAQ (contact-specific) ===== -->
-  <section class="py-16 bg-white">
-    <div class="max-w-3xl mx-auto px-5">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-5 text-black">Quick <span class="text-cyan-700">help</span></h2>
-      <p class="text-center text-black/70 mb-12">Answers to common contact questions.</p>
-      <div class="space-y-3">
-        <details class="group bg-black/5 rounded-2xl shadow-sm border border-black/10 open:border-cyan-700">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-black">
-            How fast do you reply to emails?
-            <span class="text-cyan-700 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-black/70 text-sm">Within 2 hours during business days. For urgent issues, please call or use USSD.</div>
-        </details>
-        <details class="group bg-black/5 rounded-2xl shadow-sm border border-black/10 open:border-cyan-700">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-black">
-            Do you have a toll-free line?
-            <span class="text-cyan-700 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-black/70 text-sm">Yes — 0800 123 456 (from any Kenyan network, free). Available 8am–6pm weekdays.</div>
-        </details>
-        <details class="group bg-black/5 rounded-2xl shadow-sm border border-black/10 open:border-cyan-700">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-black">
-            Can I open an account at a branch?
-            <span class="text-cyan-700 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-black/70 text-sm">Absolutely. Bring your ID and PIN. You can also open via *123# without visiting a branch.</div>
-        </details>
-        <details class="group bg-black/5 rounded-2xl shadow-sm border border-black/10 open:border-cyan-700">
-          <summary class="flex justify-between items-center cursor-pointer p-5 text-base font-medium text-black">
-            How do I report a lost/stolen card?
-            <span class="text-cyan-700 group-open:rotate-45 transition text-xl">➕</span>
-          </summary>
-          <div class="px-5 pb-5 text-black/70 text-sm">Call our 24/7 helpline: +254 700 123 456 (option 4). We'll block it immediately.</div>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CTA: call to action ===== -->
   <section class="py-16 bg-cyan-700 text-white">
     <div class="max-w-3xl mx-auto px-5 text-center">
       <h2 class="text-3xl font-bold mb-4">Prefer to talk?</h2>
       <p class="text-lg text-white/80 mb-6">Call our customer service or dial *123# from your phone.</p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="tel:+254700123456" class="inline-block bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-gray-50 transition">+254 700 123 456</a>
+        <a href="#" class="inline-block bg-white text-cyan-700 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:bg-gray-50 transition">+254737771881</a>
         <a href="#" class="inline-block border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition">Dial *123#</a>
       </div>
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="bg-black text-white/70 py-14">
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 grid md:grid-cols-4 gap-8">
       <div>
@@ -278,7 +213,7 @@
       </div>
       <div>
         <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Contact</h4>
-        <p class="text-sm text-white/60">Nairobi, Kenya<br>+254 700 123 456<br>hello@microgrow.co.ke</p>
+        <p class="text-sm text-white/60">Nairobi, Kenya<br>+254 737771881<br>hello@microgrow.co.ke</p>
       </div>
       <div>
         <h4 class="text-white text-sm font-semibold uppercase tracking-wider mb-4">Legal</h4>
